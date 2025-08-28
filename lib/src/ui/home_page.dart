@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
                     onTap: () {
                       _controller.clear();
 
-                      context.read<ExchangeCubit>().emit(ExchangeInitial());
+                      context.read<ExchangeCubit>().reset();
                     },
                     child: Image.asset("assets/logo.png", height: 60),
                   ),

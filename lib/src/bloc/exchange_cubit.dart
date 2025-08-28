@@ -25,4 +25,5 @@ class ExchangeCubit extends Cubit<ExchangeState> {
       emit(ExchangeError(e.toString()));
     }
   }
+  void reset() => emit(ExchangeInitial());
 }
