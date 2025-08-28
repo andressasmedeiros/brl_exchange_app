@@ -24,15 +24,9 @@ API_KEY=
    flutter pub get
    ```  
 4. Rodar no emulador/dispositivo (Utilizei AndroidStudio)
-<<<<<<< HEAD
-```bash
-   flutter run
- ```  
-=======
    ```bash
   flutter run --dart-define-from-file=.env 
    ```  
->>>>>>> b016b7a (adicionado click na imagem do topo para retornar ao estado incial do app)
 
 ## Funcionalidades
 - Buscar a cotação atual do BRL frente a qualquer moeda (USD, EUR, GBP, JPY, CAD etc).
