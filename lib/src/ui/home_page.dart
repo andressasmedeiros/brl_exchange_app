@@ -26,7 +26,16 @@ class _HomePageState extends State<HomePage> {
           builder: (context, state) {
             return ListView(
               children: [
-                Center(child: Image.asset("assets/logo.png", height: 60)),
+                Center(
+                  child: GestureDetector(
+                    onTap: () {
+                      _controller.clear();
+
+                      context.read<ExchangeCubit>().emit(ExchangeInitial());
+                    },
+                    child: Image.asset("assets/logo.png", height: 60),
+                  ),
+                ),
                 const SizedBox(height: 8),
 
                 const Divider(color: Colors.grey, thickness: 1, height: 1),
